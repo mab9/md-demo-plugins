@@ -2,6 +2,10 @@
 
 # the config-gotos.sh file is registered sourced by the register.sh file
 
+# some fancy ideas for the next goto plugin version
+# https://iridakos.com/programming/2019/04/10/shell-navigation-with-autocomplete
+
+
 MD_SCRIPTS=${MD_INSTALLATION_FOLDER}/scripts
 
 function listGotos() {

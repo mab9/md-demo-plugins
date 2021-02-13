@@ -1,20 +1,15 @@
 #!/bin/bash
 
-# the config-gotos.sh file is registered sourced by the register.sh file
-
 # some fancy ideas for the next goto plugin version
 # https://iridakos.com/programming/2019/04/10/shell-navigation-with-autocomplete
 
-
-MD_SCRIPTS=${MD_INSTALLATION_FOLDER}/scripts
+FILE_DIRECTORY=`dirname "$0"`
 
 function listGotos() {
   echo "List all goto aliases"
   echo ""
-  cat ${MD_SCRIPTS}/config-gotos.sh | grep -i goto
-
+  cat $FILE_DIRECTORY/resource.sh | grep -i "goto-*"
 }
-
 
 function instructions() {
   echo "Options:"
